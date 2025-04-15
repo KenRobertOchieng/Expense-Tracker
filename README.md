@@ -1,12 +1,96 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Overview
+A simple React-based expense tracking application that allows users to:
 
-Currently, two official plugins are available:
+Add new expenses with description, category, amount, and date
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+View all expenses in a table format
 
-## Expanding the ESLint configuration
+Search/filter expenses by description or category
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Delete existing expenses
+
+# Features
+Expense Form: Add new expenses with validation
+
+Expense Table: Displays all expenses in an organized table
+
+Search Functionality: Filter expenses by description or category
+
+
+# Installation
+Clone the repository:
+
+bash
+Copy
+git clone [repository-url];
+cd phase2;
+cd code-challenges;
+cd expense-tracker;
+Navigate to the project directory:
+
+bash
+Copy
+cd expense-tracker
+Install dependencies:
+
+bash
+Copy
+npm install
+Start the development server:
+
+bash
+Copy
+npm run dev
+Usage
+Adding an Expense:
+
+Fill in the description, category, amount, and date
+
+Click "SUBMIT" to add the expense
+
+Viewing Expenses:
+
+All expenses appear in the table below the form
+
+Empty state shows "No expenses to show" when no expenses exist
+
+Searching Expenses:
+
+Type in the search bar to filter expenses by description or category
+
+Deleting Expenses:
+
+Click the "Delete" button which is just to the left of search bar
+
+# File Structure
+Copy
+/src
+├── index.css            # For styling
+├── App.jsx             # Main application component
+├── Delete.jsx     # Form for adding new expenses
+└── SearchBar.js       # Search functionality component
+├── Table.jsx    # Table displaying all expenses
+├── Forms.jsx     # For all the input fields fro our data
+Dependencies
+React
+
+Vite (for development)
+
+CSS (for basic styling)
+
+Future Improvements
+Add local storage persistence
+
+Implement expense editing functionality
+
+Add charts for expense visualization
+
+Include category filtering
+
+Add user authentication
+
+  # License
+This project is open-source and available under the MIT License.
+
+# Author: Ken Ochieng
